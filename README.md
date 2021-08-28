@@ -10,3 +10,6 @@ https://api.bitbucket.org/2.0/repositories
 • Show Next button on the bottom of the screen when the endpoint for the next page is
 available in JSON.
 • Write unit test for parsing function
+
+# Usage
+Please either (1) download the project or (2) git clone the project into a Macbook device installed with XCode 12 and above. Then, run the project with simulator or an iPhone.
