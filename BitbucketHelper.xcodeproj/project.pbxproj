@@ -9,13 +9,22 @@
 /* Begin PBXBuildFile section */
 		2C91509D26DA04FC009223D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91509C26DA04FC009223D2 /* AppDelegate.swift */; };
 		2C91509F26DA04FC009223D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91509E26DA04FC009223D2 /* SceneDelegate.swift */; };
-		2C9150A126DA04FC009223D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9150A026DA04FC009223D2 /* ViewController.swift */; };
 		2C9150A426DA04FC009223D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9150A226DA04FC009223D2 /* Main.storyboard */; };
 		2C9150A726DA04FC009223D2 /* BitbucketHelper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C9150A526DA04FC009223D2 /* BitbucketHelper.xcdatamodeld */; };
 		2C9150A926DA0506009223D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9150A826DA0506009223D2 /* Assets.xcassets */; };
 		2C9150AC26DA0506009223D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9150AA26DA0506009223D2 /* LaunchScreen.storyboard */; };
 		2C9150B726DA0508009223D2 /* BitbucketHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9150B626DA0508009223D2 /* BitbucketHelperTests.swift */; };
 		2C9150C226DA0508009223D2 /* BitbucketHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9150C126DA0508009223D2 /* BitbucketHelperUITests.swift */; };
+		2C9150D726DA06E3009223D2 /* NetworkRequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9150D626DA06E3009223D2 /* NetworkRequestWorker.swift */; };
+		2C9150DD26DA0711009223D2 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9150DC26DA0711009223D2 /* Endpoints.swift */; };
+		2C9150EE26DA0E03009223D2 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9150ED26DA0E03009223D2 /* Repo.swift */; };
+		2C9150FE26DA1AD6009223D2 /* RepoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9150FD26DA1AD6009223D2 /* RepoListInteractor.swift */; };
+		2C91510726DA1B10009223D2 /* RepoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91510626DA1B10009223D2 /* RepoListPresenter.swift */; };
+		2C91510D26DA1B63009223D2 /* RepoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91510C26DA1B63009223D2 /* RepoListViewController.swift */; };
+		2C91511D26DA2723009223D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C91511C26DA2723009223D2 /* Localizable.strings */; };
+		2C91512526DA2A0B009223D2 /* RepoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91512426DA2A0B009223D2 /* RepoListTableViewCell.swift */; };
+		2C91513026DA3A57009223D2 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91512F26DA3A57009223D2 /* ImageLoader.swift */; };
+		2C91513826DA3D7A009223D2 /* RepoWebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91513726DA3D7A009223D2 /* RepoWebsiteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +48,6 @@
 		2C91509926DA04FC009223D2 /* BitbucketHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitbucketHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C91509C26DA04FC009223D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C91509E26DA04FC009223D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C9150A026DA04FC009223D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C9150A326DA04FC009223D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C9150A626DA04FC009223D2 /* BitbucketHelper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BitbucketHelper.xcdatamodel; sourceTree = "<group>"; };
 		2C9150A826DA0506009223D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +59,16 @@
 		2C9150BD26DA0508009223D2 /* BitbucketHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitbucketHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9150C126DA0508009223D2 /* BitbucketHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitbucketHelperUITests.swift; sourceTree = "<group>"; };
 		2C9150C326DA0508009223D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C9150D626DA06E3009223D2 /* NetworkRequestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestWorker.swift; sourceTree = "<group>"; };
+		2C9150DC26DA0711009223D2 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		2C9150ED26DA0E03009223D2 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		2C9150FD26DA1AD6009223D2 /* RepoListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListInteractor.swift; sourceTree = "<group>"; };
+		2C91510626DA1B10009223D2 /* RepoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListPresenter.swift; sourceTree = "<group>"; };
+		2C91510C26DA1B63009223D2 /* RepoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewController.swift; sourceTree = "<group>"; };
+		2C91511C26DA2723009223D2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		2C91512426DA2A0B009223D2 /* RepoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListTableViewCell.swift; sourceTree = "<group>"; };
+		2C91512F26DA3A57009223D2 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		2C91513726DA3D7A009223D2 /* RepoWebsiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoWebsiteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +119,15 @@
 		2C91509B26DA04FC009223D2 /* BitbucketHelper */ = {
 			isa = PBXGroup;
 			children = (
+				2C9150DB26DA06F6009223D2 /* Config */,
+				2C9150FC26DA1A86009223D2 /* Interactor */,
+				2C9150EC26DA0DB6009223D2 /* Model */,
+				2C91510526DA1AF0009223D2 /* Presenter */,
+				2C9150F526DA17E1009223D2 /* View */,
+				2C9150D226DA0514009223D2 /* Worker */,
 				2C91509C26DA04FC009223D2 /* AppDelegate.swift */,
 				2C91509E26DA04FC009223D2 /* SceneDelegate.swift */,
-				2C9150A026DA04FC009223D2 /* ViewController.swift */,
-				2C9150A226DA04FC009223D2 /* Main.storyboard */,
 				2C9150A826DA0506009223D2 /* Assets.xcassets */,
-				2C9150AA26DA0506009223D2 /* LaunchScreen.storyboard */,
 				2C9150AD26DA0506009223D2 /* Info.plist */,
 				2C9150A526DA04FC009223D2 /* BitbucketHelper.xcdatamodeld */,
 			);
@@ -129,6 +150,60 @@
 				2C9150C326DA0508009223D2 /* Info.plist */,
 			);
 			path = BitbucketHelperUITests;
+			sourceTree = "<group>";
+		};
+		2C9150D226DA0514009223D2 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				2C91512F26DA3A57009223D2 /* ImageLoader.swift */,
+				2C9150D626DA06E3009223D2 /* NetworkRequestWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		2C9150DB26DA06F6009223D2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2C9150DC26DA0711009223D2 /* Endpoints.swift */,
+				2C91511C26DA2723009223D2 /* Localizable.strings */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2C9150EC26DA0DB6009223D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C9150ED26DA0E03009223D2 /* Repo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C9150F526DA17E1009223D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C9150A226DA04FC009223D2 /* Main.storyboard */,
+				2C9150AA26DA0506009223D2 /* LaunchScreen.storyboard */,
+				2C91512426DA2A0B009223D2 /* RepoListTableViewCell.swift */,
+				2C91510C26DA1B63009223D2 /* RepoListViewController.swift */,
+				2C91513726DA3D7A009223D2 /* RepoWebsiteViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C9150FC26DA1A86009223D2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2C9150FD26DA1AD6009223D2 /* RepoListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2C91510526DA1AF0009223D2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2C91510626DA1B10009223D2 /* RepoListPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C91511D26DA2723009223D2 /* Localizable.strings in Resources */,
 				2C9150AC26DA0506009223D2 /* LaunchScreen.storyboard in Resources */,
 				2C9150A926DA0506009223D2 /* Assets.xcassets in Resources */,
 				2C9150A426DA04FC009223D2 /* Main.storyboard in Resources */,
@@ -261,9 +337,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C9150A126DA04FC009223D2 /* ViewController.swift in Sources */,
+				2C9150FE26DA1AD6009223D2 /* RepoListInteractor.swift in Sources */,
+				2C91512526DA2A0B009223D2 /* RepoListTableViewCell.swift in Sources */,
+				2C9150EE26DA0E03009223D2 /* Repo.swift in Sources */,
+				2C91510D26DA1B63009223D2 /* RepoListViewController.swift in Sources */,
+				2C9150D726DA06E3009223D2 /* NetworkRequestWorker.swift in Sources */,
+				2C91513026DA3A57009223D2 /* ImageLoader.swift in Sources */,
+				2C91513826DA3D7A009223D2 /* RepoWebsiteViewController.swift in Sources */,
 				2C9150A726DA04FC009223D2 /* BitbucketHelper.xcdatamodeld in Sources */,
+				2C91510726DA1B10009223D2 /* RepoListPresenter.swift in Sources */,
 				2C91509D26DA04FC009223D2 /* AppDelegate.swift in Sources */,
+				2C9150DD26DA0711009223D2 /* Endpoints.swift in Sources */,
 				2C91509F26DA04FC009223D2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

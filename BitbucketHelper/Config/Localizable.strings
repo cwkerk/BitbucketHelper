@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  BitbucketHelper
+
+  Created by Chin Wee on 28/8/21.
+  
+*/
+
+"CREATED_AT" = "Created at ";
+"GENERIC_POPUP_TITLE" = "Unexpected Error";
+"GENERIC_POPUP_OK_BUTTON" = "OK";
